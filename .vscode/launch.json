@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Attach (Remote Debug Docker)",
+            "type": "python",
+            "request": "attach",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/usr/src/app" // Linux example; adjust as necessary for your Docker WORKDIR.
+                }
+            ],
+            "port": 3000,
+            "host": "0.0.0.0"
+        }
+    ]
+}
